@@ -11,7 +11,7 @@ html,body{height: 100%; width: 100%;}
 }
 
 .menu .bg{
-    background-image: url(images/8.jpg);
+    background-image: url(images/k8.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -24,12 +24,20 @@ html,body{height: 100%; width: 100%;}
     position: absolute;
     z-index: 2;
     width: 100%;
+    
 }
 
-.menu nav ul li{
+.menu nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu nav ul li {
+    color: #fff;
     font-size: 25px;
     font-weight: 400;
-    margin-left: 35px;
+    margin-left: 30px;
 } 
 
 .menu nav img:hover {
@@ -37,10 +45,10 @@ html,body{height: 100%; width: 100%;}
     transform: scale(1.4);
 }
 
-.menu ul li:hover{
-    border-top: 2px solid white;
+.menu ul li :hover :not(nav-item dropdown){
+    border-top: 2px solid yellow;
     transition: 0.5s;
-
+    color:red;
 }
 
 .menu .content{
@@ -49,6 +57,7 @@ html,body{height: 100%; width: 100%;}
     text-align: center;
     top: 50%;
     color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .trademark .row img{
@@ -61,7 +70,7 @@ html,body{height: 100%; width: 100%;}
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 50px;
-    background-color:grey;
+    background-color:tomato;
     padding: 20px;
 }
 
@@ -69,3 +78,6 @@ html,body{height: 100%; width: 100%;}
     width: 300px;
     height: auto; 
 }
+
+
+ 
